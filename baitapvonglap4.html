@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let c = +prompt('nhap so');
+    let a = 1;
+    let b = 1;
+    let temp;
+    let fibonacci = "";
+    for (let i = 0; i < c; i++) {
+        if (a % 5 == 0) {
+            alert('số fibonacci đầu tiên chia hết 5 là' + a)
+            break;
+        }
+        fibonacci += a + " ";
+        temp = a + b;
+        a = b;
+        b = temp;
+    }
+</script>
+</body>
+</html>
