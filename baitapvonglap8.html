@@ -6,12 +6,16 @@
 </head>
 <body>
 <script>
-    for (i = 0; i < 21; i++) {
-        document.write("*****")
+    let a1 = 0
+    let a2 = 1
+    let a3 = 1
+    for (i = 0; i < 20; i++) {
+        document.write(a3)
         document.write("<br>")
+        a3 = a1 + a2
+        a1 = a2
+        a2 = a3
     }
-
-
 </script>
 </body>
 </html>

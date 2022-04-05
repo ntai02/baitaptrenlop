@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [35,6,9,12,15,30]
+    let first = 0
+    let last = arr.length - 1
+    while (first < last){
+        let b = arr [first]
+        arr[first] = arr[last]
+        arr[last] = b
+        first++
+        last--
+    }
+    document.write(arr)
+    // let max = arr[0]
+    // let index = 0
+    // for (let i = 1; i < arr.length ; i++) {
+    //     if (arr[i] > max) {
+    //         max = arr [i]
+    //         index = i
+    //     }
+    // }alert("max: " + max + " at position " + index);
+</script>
+</body>
+</html>
