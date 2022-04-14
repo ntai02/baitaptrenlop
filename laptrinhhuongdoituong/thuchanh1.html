@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let person = {
+    //     name: ['Bob', 'Natan'],
+    //     age: [18],
+    //     hobbies: ['play game', 'listen to music'],
+    //     bio: function () {
+    //         alert(this.name[0] + ' and ' + this.name[1] + ' is ' + this.age + ' years old. They like ' + this.hobbies[0] + ' and ' + this.hobbies[1])
+    //     },
+    //     greeting: function () {
+    //         alert("Hi I'm " + this.name[1])
+    //     }
+    // }
+    // person.bio()
+    // person.greeting()
+    //
+    // person.age = 45
+    // person['name']['last'] = 'Lucifer'
+// name : {
+//         first1 : "Bob"
+//         last1 : "Natan"
+// }
+//    person.name.first1
+//    person.name.last1
+//     person['eye'] ='hadel' ;
+    function Apple(type) {
+        this.type = type
+        this.color = 'red';
+        this.getInfo = getAppleInfo;
+    }
+    function getAppleInfo () {
+        return this.color + ' ' + this.type + ' apple ';
+    }
+    let apple = new Apple(' macintosh ');
+    apple.color = ' reddish ';
+    alert(apple.getInfo());
+    
+</script>
+</body>
+</html>
